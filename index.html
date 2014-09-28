@@ -28,8 +28,15 @@
 <body> 
 
 <div data-role="page" id="page">
-<div class="swiper-slide">
-    <div class="slide-inner">
+	<div class="swiper-container swiper-parent">
+    <div class="swiper-wrapper">
+    
+      <!--Menu page-->
+      <div class="swiper-slide sliderbg_menu">
+          <div class="swiper-container swiper-nested">
+                   <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                                  <div class="slide-inner">
                                         <div class="logo"><a href="#"><img src="colors/beauty/images/logo.png" alt="" title="" border="0" /></a></div>
                                         <div class="menu">
                                         <ul>
@@ -46,8 +53,16 @@
                                         </div>
                                  </div>
                          </div>
+                   </div>
+                  <div class="swiper-scrollbar"></div>
+          </div> 
+      </div> 
+
+</div>
+</div>
 </div>
 
+<!-- Pagina1 -->
 <div data-role="page" id="page2">
 	<div data-role="header">
 		<h1>Página dos</h1>
