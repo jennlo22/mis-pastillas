@@ -7,7 +7,7 @@ function loadPillsLog(){
 	$log.html("");
 	var $li;
 	localStorage.setItem("firstDay", "2014-10-01T00:00:00");
-	localStorage.setItem("pillsNumber", "28");
+	//localStorage.setItem("pillsNumber", "28");
 	
 	var firstDay = window.localStorage.getItem("firstDay");
 	var pillsNumber = loadPillsNumber();

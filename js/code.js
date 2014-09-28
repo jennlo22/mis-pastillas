@@ -22,6 +22,8 @@ $('.menu').find('li a').each(function (i) {
     $(this).attr('onclick', 'swiperParent.swipeTo(' + (i+1) + ')');
 });
 
+$('.pedir').attr('onclick', 'swiperParent.swipeTo(4)');
+
 //Scroll Containers
 $('.swiper-nested').each(function(){
 	var swipernested = $(this).swiper({

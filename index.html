@@ -20,11 +20,12 @@
 <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'/>
 <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
 <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+
 </head>
 <body>
   <div id="header">
       <div class="gohome radius20"><a href="#"><img src="images/icons/home.png" alt="" title="" /></a></div>
-      <div class="gomenu radius20"><a href="#" onclick="swiperParent.swipeTo(8);"><img src="images/icons/contact.png" alt="" title="" /></a></div>
+      <div class="gomenu radius20"><a href="#" onclick="swiperParent.swipeTo(3);"><img src="images/icons/contact.png" alt="" title="" /></a></div>
   </div>
   <div class="swiper-container swiper-parent">
     <div class="swiper-wrapper">
@@ -39,8 +40,8 @@
                                         <div class="menu">
                                         <ul>
                                         <li><a href="#"><div class="round_img"><img src="images/icons/tools.png" alt="" title="" /></div><span>Pastas</span></a></li>
-                                        <li><a href="#"><div class="round_img"><img src="images/icons/blog.png" alt="" title="" /></div><span>Registros</span></a></li>
-                                        <li><a href="#"><div class="round_img"><img src="images/icons/about.png" alt="" title="" /></div><span>Perfil</span></a></li>
+                                        <li><a href="#"><div class="round_img"><img src="images/icons/blog.png" alt="" title="" /></div><span>Diario de Tomas</span></a></li>
+                                       
                                         <li><a href="#"><div class="round_img"><img src="images/icons/docs.png" alt="" title="" /></div><span>Farmacias</span></a></li>
                                         
                                         </ul>
@@ -154,7 +155,7 @@
                     <div class="swiper-slide">
                               <div class="slide-inner">
                                         <div class="pages_container">
-                                        	<h2 class="page_title">Registros</h2>
+                                        	<h2 class="page_title">Diario de Tomas</h2>
                                             <ul class="listing_detailed" id="pillsLog" name="pillsLog">
                                                 <li>29/Sep/2013</li>
                                                 <li><a href="#">30/Sep/2013</a></li>
@@ -170,7 +171,56 @@
      </div>
      
       
-      <!--Page 1 content Configurar Alarma -->
+
+      
+
+ 
+     <!--Page 4 content-->
+      <div class="swiper-slide sliderbg">
+      <div class="swiper-container swiper-nested">
+               <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                              <div class="slide-inner">
+                                        <div class="pages_container">
+                                        <h2 class="page_title">Droguerias Cercanas</h2>
+                                        <div class="portfolio_item radius8">
+                                             <div class="portfolio_image"><img src="images/droguerias/multidrogas.png" alt="" title="" border="0"  class="pedir" /></div>
+                                                 <div class="portfolio_details">
+                                                 <h4 class="pedir">Multidrogas</h4>
+                                                 <p>Calle 7 No 10-33 Chipre</p>
+                                                 <a rel="gallery-2" href="tel:3004410097" class="" title="Webdesign work">880 00 00</a>
+                                              </div>
+                                        </div>
+                                        <div class="portfolio_item radius8">
+                                             <div class="portfolio_image"><img src="images/droguerias/condrogas.png" alt="" title="" border="0" class="pedir" /></div>
+                                                 <div class="portfolio_details">
+                                                 <h4  class="pedir">Condrogas</h4>
+                                                 <p>Carrera 22 No 17-30 Centro</p>
+                                                 <a rel="" href="tel:3004410097" class="" title="Webdesign work">885 44 44</a>
+                                              </div>
+                                        </div>
+                                        <div class="portfolio_item radius8">
+                                             <div class="portfolio_image"><img src="images/droguerias/larebaja.gif" alt="" title="" border="0" class="pedir" /></div>
+                                                 <div class="portfolio_details">
+                                                 <h4  class="pedir">Drogas La Rebaja</h4>
+                                                 <p>Carrera 23 No 54 - 10</p>
+                                                 <a rel="gallery-2" href="tel:3004410097" class="" title="Webdesign work">886 37 21</a>
+                                              </div>
+                                        </div>
+                                        
+                                           
+                                        <div class="clearfix"></div>
+      									<div class="scrolltop radius20"><a href="#"><img src="images/icons/top.png" alt="Go on top" title="Go on top" /></a></div>
+                                        </div>
+                                        <!--End of page container-->
+                              </div>
+                    </div>
+              </div>
+              <div class="swiper-scrollbar"></div>
+     </div>
+     </div>
+     
+            <!--Page 1 content Configurar Alarma -->
       <div class="swiper-slide sliderbg">
       <div class="swiper-container swiper-nested">
                <div class="swiper-wrapper">
@@ -178,7 +228,7 @@
                               <div class="slide-inner">
                                         <div class="pages_container">
                                         
-                                        <h2 class="page_title">Perfil</h2>
+                                        <h2 class="page_title">Hacer Pedido</h2>
                                             <h2 id="Note"></h2>
                                             <div class="form">
                                             <form class="cmxform" id="CommentForm" method="post" action="">
@@ -201,57 +251,10 @@
               </div>
               <div class="swiper-scrollbar"></div>
      </div>
-     </div>
-      
-
- 
-     <!--Page 4 content-->
-      <div class="swiper-slide sliderbg">
-      <div class="swiper-container swiper-nested">
-               <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                              <div class="slide-inner">
-                                        <div class="pages_container">
-                                        <h2 class="page_title">Droguerias Cercanas</h2>
-                                        <div class="portfolio_item radius8">
-                                             <div class="portfolio_image"><a rel="gallery-1" href="images/portfolio_thumb.jpg" class="swipebox" title="Webdesign work"><img src="images/droguerias/multidrogas.png" alt="" title="" border="0" /></a></div>
-                                                 <div class="portfolio_details">
-                                                 <h4>Multidrogas</h4>
-                                                 <p>Calle 7 No 10-33 Chipre</p>
-                                                 <a rel="gallery-2" href="tel:3004410097" class="" title="Webdesign work">880 00 00</a>
-                                              </div>
-                                        </div>
-                                        <div class="portfolio_item radius8">
-                                             <div class="portfolio_image"><a rel="gallery-1" href="images/portfolio_thumb.jpg" class="swipebox" title="Webdesign work"><img src="images/droguerias/condrogas.png" alt="" title="" border="0" /></a></div>
-                                                 <div class="portfolio_details">
-                                                 <h4>Condrogas</h4>
-                                                 <p>Carrera 22 No 17-30 Centro</p>
-                                                 <a rel="gallery-2" href="tel:3004410097" class="" title="Webdesign work">885 44 44</a>
-                                              </div>
-                                        </div>
-                                        <div class="portfolio_item radius8">
-                                             <div class="portfolio_image"><a rel="gallery-1" href="images/portfolio_thumb.jpg" class="swipebox" title="Webdesign work"><img src="images/droguerias/larebaja.gif" alt="" title="" border="0" /></a></div>
-                                                 <div class="portfolio_details">
-                                                 <h4>Drogas La Rebaja</h4>
-                                                 <p>Carrera 23 No 54 - 10</p>
-                                                 <a rel="gallery-2" href="tel:3004410097" class="" title="Webdesign work">886 37 21</a>
-                                              </div>
-                                        </div>
-                                        
-                                           
-                                        <div class="clearfix"></div>
-      									<div class="scrolltop radius20"><a href="#"><img src="images/icons/top.png" alt="Go on top" title="Go on top" /></a></div>
-                                        </div>
-                                        <!--End of page container-->
-                              </div>
-                    </div>
-              </div>
-              <div class="swiper-scrollbar"></div>
-     </div>
-     </div>
-     
-       
+     </div> 
      <!--End of pages--> 
+
+
 
     </div>
     <div class="pagination"></div>
