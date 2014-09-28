@@ -87,14 +87,14 @@
                                         <h2 class="page_title">Configurar Alarma</h2>
                                             <h2 id="Note"></h2>
                                             <div class="form">
-                                            <form class="cmxform" id="CommentForm" method="post" action="">
+                                            <form class="cmxform" id="CommentForm" method="post" onsubmit="setDatos()">
                                             <label>Número de pastas:</label>
                                             <input type="number" name="NumeroPastas" id="NumeroPastas" value="" class="form_input radius4 required storage" />
                                             <label>Hora de la alarma diaria:</label>
                                             <input type="time" name="horaAlarma" id="horaAlarma" value="" class="form_input radius4 required storage" />
                                             <label>Marca de las pastas:</label>
                                             <input type="text" name="marcaPasta" id="marcaPasta" value="" class="form_input radius4 required storage" />
-                                            <input type="button" name="submit" class="form_submit radius4 green green_borderbottom" id="submit" value="Guardar"  onclick="setDatos()" />
+                                            <input type="submit" name="submit" class="form_submit radius4 green green_borderbottom" id="submit" value="Guardar"  />
                                             <input class="" type="hidden" name="to"  value="youremaill@yourwebsiteee.com" />
                                             <input class="" type="hidden" name="subject" value="Contacf form message" />
                                             <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label>
