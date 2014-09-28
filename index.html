@@ -21,25 +21,30 @@
 
 <!-- guarda en el localstorage cada vez que digita un dato-->
 <script>
-	$(document).ready(function(){
-		$('.storage').on('keyup', function(){
-			localStorage[$(this).attr('NumeroPastas')]=$(this).val();
-			localStorage[$(this).attr('horaAlarma')]=$(this).val();
-			localStorage[$(this).attr('MarcaPasta')]=$(this).val();
-		});	
-	});	
-    
-</script>
-<script>
-	function setDatos() {
-    for (var i=0; i < storage.length; i++) {
-        var clave = storage.key(i);
-        var valor = storage.getItem(clave);
-        alert('Valor obtenido ' + clave + '=' + valor);
-    }
-}
-</script>
 
+function checkLocalStorageSupport() {
+ try {
+   return 'localStorage' in window && window['localStorage'] !== null; } catch (e) {
+   return false;
+ }
+}
+
+function onClick()
+  {
+  if(checkLocalStorageSupport)
+  {
+  window.localStorage.setItem("NumeroPastas",document.getElementById("NumeroPastas").value);
+  
+  var NumeroPastas = window.localStorage.getItem("NumeroPastas");
+  
+  alert(NumeroPastas);
+  
+  	}
+  }
+  
+  
+        
+</script>
 </head>
 <body>
   <div id="header">
@@ -87,7 +92,7 @@
                                         <h2 class="page_title">Configurar Alarma</h2>
                                             <h2 id="Note"></h2>
                                             <div class="form">
-                                            <form class="cmxform" id="CommentForm" method="post" onsubmit="setDatos()">
+                                            <form class="cmxform" id="CommentForm" method="post" onsubmit="onClick()">
                                             <label>Número de pastas:</label>
                                             <input type="number" name="NumeroPastas" id="NumeroPastas" value="" class="form_input radius4 required storage" />
                                             <label>Hora de la alarma diaria:</label>
