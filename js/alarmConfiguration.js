@@ -3,10 +3,11 @@ function saveLocalStorage(){
 	if(checkLocalStorageSupport){
 		window.localStorage.setItem("pillsNumber",document.getElementById("pillsNumber").value);
 		window.localStorage.setItem("alarmHour",document.getElementById("alarmHour").value); 
-
-		window.localStorage.setItem("firstDay",document.getElementById("firstDay").value); 
+		//var firstDay = new Date();
+		window.localStorage.setItem("firstDay", document.getElementById("firstDay").value );
+		//alert( firstDay.getTime() );
 		window.localStorage.setItem("pillsBrand",document.getElementById("pillsBrand").value);
-
+		alert('grabando');
 	}
 }
 
